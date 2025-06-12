@@ -58,6 +58,9 @@ header h1 {
     align-items: center; /* Garante que o ícone e o título fiquem alinhados verticalmente */
 }
 
+
+
+
 .logo-title h1 {
     margin-left: 5px; /* Espaçamento entre o ícone e o título */
     font-size: 0.8em; /* Tamanho do título */
