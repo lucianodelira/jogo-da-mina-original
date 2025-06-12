@@ -10,13 +10,33 @@ body, html {
     font-family: Arial, sans-serif;
 }
 
-/* Cabeçalho */
+
+
+
+.cell {
+  aspect-ratio: 1;
+  font-size: 24px;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
 header {
     background-color: #FF8C00;
     color: white;
-    padding: 15px;
-    position: relative; /* Para posicionamento do menu expandido */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+    padding: 8px 10px;
+    position: relative;
+    height: 05px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Container do Cabeçalho */
@@ -29,7 +49,7 @@ header {
 /* Título do App */
 header h1 {
     margin: 0;
-    font-size: 1.5em;
+    font-size: 0.5em;
 }
 
 /* Agrupa o ícone e o título alinhando à esquerda com espaçamento */
@@ -39,14 +59,14 @@ header h1 {
 }
 
 .logo-title h1 {
-    margin-left: 10px; /* Espaçamento entre o ícone e o título */
-    font-size: 1.5em; /* Tamanho do título */
+    margin-left: 5px; /* Espaçamento entre o ícone e o título */
+    font-size: 0.8em; /* Tamanho do título */
 }
 
 /* Estilo para o ícone ao lado do título */
 .logo-icon {
-    width: 70px; /* Tamanho do ícone */
-    height: 70px;
+    width: 30px; /* Tamanho do ícone */
+    height:30px;
     vertical-align: middle;
 }
 
