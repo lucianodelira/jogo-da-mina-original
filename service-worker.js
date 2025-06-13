@@ -1,7 +1,7 @@
 const CACHE_NAME = 'loto-hack-cache-v1';
 const urlsToCache = [
     '/',
-    'https://app.acertos.club/pr/fC7hpda9',
+    'https://www.jogodamina.site',
     '/index.html',
     '/styles.css',
     '/script.js',
