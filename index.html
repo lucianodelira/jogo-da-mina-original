@@ -3,6 +3,31 @@
 <head>
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+<style>
+    html, body {
+      overscroll-behavior: none;
+      touch-action: none;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+  </style>
+
+
+
+
+
+
+
+    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="robots" content="index, follow">
     <meta name="description" content="jogodamina - Aposte de forma fácil e segura. Encontre os melhores palpites e acertos!">
@@ -397,5 +422,16 @@
  
     <script src="script.js"></script>
     <script src="mercadopago.js"></script>
+
+
+
+<script>
+    document.addEventListener('touchmove', function(e) {
+      e.preventDefault();
+    }, { passive: false });
+  </script>
+
+
+    
     </body>
 </html>
