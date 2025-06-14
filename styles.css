@@ -1013,3 +1013,37 @@ select:hover {
     font-weight: bold;
 }
 
+
+
+
+    .painel {
+      background: white;
+      padding: 20px 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .saldo {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .btn-saque {
+      background-color: #00BFA5;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      font-size: 16px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .btn-saque:hover {
+      background-color: #009e88;
+    }
+    .btn-saque i {
+      margin-right: 8px;
+    }
