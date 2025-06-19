@@ -257,21 +257,34 @@
 
   // Função para resetar o jogo
   function resetGame() {
-    prizeIndex = Math.floor(Math.random() * totalCells);
-    clickedCells = new Set();
-    credits = 0;
-    paymentId = null;
-    board.innerHTML = "";
-    pixKeyInput.style.display = "none";
-    copyPixKeyButton.style.display = "none";
-    gameLiberado.style.display = "none";
-    loseMessage.style.display = "none";
-    winMessage.style.display = "none";
-    resetButton.style.display = "none";
-    pixButton.style.display = "inline-block";
-    creditMenu.style.display = "block"; // Mostra o menu de créditos
-    createBoard();
-  }
+  // Limpa cookies
+  document.cookie.split(";").forEach(function(c) {
+    document.cookie = c
+      .replace(/^ +/, "")
+      .replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
+  });
+
+  // Limpa localStorage e sessionStorage
+  localStorage.clear();
+  sessionStorage.clear();
+
+  // Agora continua com o reset do jogo normalmente
+  prizeIndex = Math.floor(Math.random() * totalCells);
+  clickedCells = new Set();
+  credits = 0;
+  paymentId = null;
+  board.innerHTML = "";
+  pixKeyInput.style.display = "none";
+  copyPixKeyButton.style.display = "none";
+  gameLiberado.style.display = "none";
+  loseMessage.style.display = "none";
+  winMessage.style.display = "none";
+  resetButton.style.display = "none";
+  pixButton.style.display = "inline-block";
+  creditMenu.style.display = "block"; // Mostra o menu de créditos
+  createBoard();
+}
+
 
   // Função para criar o tabuleiro
   function createBoard() {
